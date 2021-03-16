@@ -1,0 +1,44 @@
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+body {
+    background-color: hsl(185, 75%, 39%);
+}
+
+.upcircle {
+    position: absolute;
+    bottom: 35%;
+    right: 20%;
+}
+
+.downcircle {
+    position: absolute;
+    top: 35%;
+    left: 130%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.centerbox {
+    width: 25%;
+    height: 30%;
+    background-color: floralwhite;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+p {
+    font-family: Kumbh Sans;
+}
+
+#nameofdude {
+    font-style: bold;
+}
