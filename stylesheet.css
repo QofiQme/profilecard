@@ -1,44 +1,145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .attribution {
-    font-size: 11px;
+    display: flex;
+    background: ivory;
+    height: 2%;
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
     text-align: center;
+    bottom: 2%;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 body {
     background-color: hsl(185, 75%, 39%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
 }
 
-.upcircle {
+div.topcircle {
+    /*this is for the circle in the top left of the background*/
+    display: flex;
     position: absolute;
-    bottom: 35%;
-    right: 20%;
+    top: -500px;
+    left: -250px;
 }
 
-.downcircle {
+div.bottomcircle {
+    display: flex;
     position: absolute;
-    top: 35%;
-    left: 130%;
+    top: 58%;
+    left: 55%;
+    transform: scale(1.2);
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
-
-.centerbox {
-    width: 25%;
-    height: 30%;
-    background-color: floralwhite;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-
-p {
+div.namecard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1px;
+    height: 375px;
+    width: 349px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.1);
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
     font-family: Kumbh Sans;
 }
 
-#nameofdude {
-    font-style: bold;
+#head {
+    background-image: url("images/bg-pattern-card.svg");
+    height: 300px;
+    width: inherit;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+#image {
+    background-image: url("images/image-victor.jpg");
+    width: 100px;
+    height: 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 5px;
+    border-color: white;
+    position: relative;
+    top: -13%;
+    z-index: 2;
+}
+
+#content {
+    position: relative;
+    top: -8%;
+    padding: 10px;
+    text-align: center;
+    border-width: 5px;
+    height: 150px;
+    width: inherit;
+    background-color: transparent;
+}
+
+#name {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+#age {
+    font-weight: 400px;
+    color: grey;
+    margin-left: 5px;
+}
+
+#city {
+    margin-top: 10px;
+    color: grey;
+    font-size: 14px;
+}
+
+#foot {
+    display: flex;
+    flex-direction: row;
+    position: inherit;
+    height: 300px;
+    width: inherit;
+    border-top: solid rgba(0, 0, 0, 0.1);
+    border-top-width: 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.stats {
+    font-weight: 400;
+    font-size: 8px;
+    letter-spacing: 2px;
+}
+
+.statsfigures {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.followers,
+.likes {
+    margin-right: 30px;
 }
